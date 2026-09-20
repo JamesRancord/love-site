@@ -116,7 +116,7 @@ body {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
-    transform: translateY(-8%);
+    transform: translateY(-25%);
     user-select: none;
     pointer-events: none;
     animation: pulse 1.8s ease-in-out infinite;
@@ -133,8 +133,8 @@ body {
 }
 
 @keyframes pulse {
-    0%, 100% { opacity: 0.85; transform: translateY(-8%) scale(1); }
-    50%      { opacity: 1;    transform: translateY(-8%) scale(1.06); }
+    0%, 100% { opacity: 0.85; transform: translateY(-25%) scale(1); }
+    50%      { opacity: 1;    transform: translateY(-25%) scale(1.06); }
 }
 
 @media (prefers-reduced-motion: reduce) {
