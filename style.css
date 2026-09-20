@@ -90,7 +90,7 @@ body {
     align-items: center;
     justify-content: center;
     /* Убрали backface-visibility — не нужна */
-    transition: opacity 0s 0.55s; /* 0.55s = половина от 1.1s переворота */
+    transition: opacity 0s 0.35s; /* 0.55s = половина от 1.1s переворота */
 }
 
 .heart-front {
