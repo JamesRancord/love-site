@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Для тебя ❤</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <svg width="0" height="0" aria-hidden="true" style="position:absolute">
+        <defs>
+            <linearGradient id="heartGradFront" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#ff8fa3" />
+                <stop offset="100%" stop-color="#e01e4c" />
+            </linearGradient>
+            <linearGradient id="heartGradBack" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#ffc2d1" />
+                <stop offset="100%" stop-color="#ff2d55" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <canvas id="fireworks" aria-hidden="true"></canvas>
+
+    <main class="scene">
+        <div
+            id="heartWrapper"
+            class="heart-wrapper"
+            role="button"
+            tabindex="0"
+            aria-label="Нажми на сердце"
+            aria-pressed="false"
+        >
+            <div class="heart-3d">
+                <div class="heart-face heart-front">
+                    <svg class="heart-svg" viewBox="0 0 100 100" aria-hidden="true">
+                        <path d="M50,88 C20,64 4,45 4,29 C4,15 15,4 29,4 C39,4 46,10 50,19 C54,10 61,4 71,4 C85,4 96,15 96,29 C96,45 80,64 50,88 Z" />
+                    </svg>
+                    <span class="heart-label">Нажми</span>
+                </div>
+                <div class="heart-face heart-back">
+                    <svg class="heart-svg" viewBox="0 0 100 100" aria-hidden="true">
+                        <path d="M50,88 C20,64 4,45 4,29 C4,15 15,4 29,4 C39,4 46,10 50,19 C54,10 61,4 71,4 C85,4 96,15 96,29 C96,45 80,64 50,88 Z" />
+                    </svg>
+                    <span class="heart-label heart-label--love">Арина, п</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<script src="fireworks.js" defer></script>
+<script src="heart.js" defer></script>
+</body>
+</html>
