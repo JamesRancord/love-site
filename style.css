@@ -74,6 +74,7 @@ body {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
+     -webkit-transform-style: preserve-3d;
     transition: transform 1.1s cubic-bezier(0.45, 0, 0.15, 1);
     will-change: transform;
 }
@@ -88,12 +89,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    /* Убрали backface-visibility — не нужна */
+    transition: opacity 0s 0.55s; /* 0.55s = половина от 1.1s переворота */
+}
+
+.heart-front {
+    opacity: 1;
 }
 
 .heart-back {
     transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.heart-wrapper.is-flipped .heart-front {
+    opacity: 0;
+}
+
+.heart-wrapper.is-flipped .heart-back {
+    opacity: 1;
 }
 
 .heart-svg {
