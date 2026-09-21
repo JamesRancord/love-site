@@ -125,7 +125,7 @@ body {
     position: relative;
     z-index: 2;
     color: var(--text);
-    font-size: clamp(18px, 4.5vmin, 32px);
+    font-size: clamp(32px, 8vmin, 40px);
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -147,8 +147,8 @@ body {
 }
 
 @keyframes pulse {
-    0%, 100% { opacity: 0.85; transform: translateY(-25%) scale(1); }
-    50%      { opacity: 1;    transform: translateY(-25%) scale(1.06); }
+    0%, 100% { opacity: 0.85; transform: translateY(-55%) scale(1); }
+    50%      { opacity: 1;    transform: translateY(-55%) scale(1.06); }
 }
 
 @media (prefers-reduced-motion: reduce) {
